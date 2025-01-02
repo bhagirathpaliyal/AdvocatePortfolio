@@ -1,14 +1,4 @@
-// import React from 'react'
 
-// const Professionals = () => {
-//   return (
-//     <div id='Our-Professionls' className='flex flex-col justify-center items-center p-[50px]'>
-//         <h4 className='text-2xl font-bold max-sm:text-[16px] text-[24px]'>OUR PROFESSIONALS</h4>
-//     </div>
-//   )
-// }
-
-// export default Professionals
 import React from "react";
 
 const professionals = [
@@ -34,7 +24,7 @@ const professionals = [
 
 const Professionals = () => {
   return (
-    <section className="bg-gray-100 py-10 ">
+    <section className="bg-gray-100 py-10 " id="Our-Professionls">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="max-sm:text-[16px] text-[24px] font-bold text-center text-gray-800 mb-8">
           Our Professionals
