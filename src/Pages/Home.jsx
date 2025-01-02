@@ -6,18 +6,19 @@ import Header from '../components/header/Header'
 import Logo from '../components/header/Logo'
 import ContactForm from '../components/ContactForm'
 import Service from '../components/Service'
-import Professionals from '../components/professionals'
+import Professionals from '../components/Professionals'
+
 
 const Home = ({ scrollToSection }) => {
  
   return (
     <div >
-      <div className='Home text-[#fff] flex flex-col items-center bg-gradient-to-r from-[#08132f] to-[#0c2b59] p-[40px]'>
+      <div className=' text-[#fff] flex flex-col items-center bg-gradient-to-r from-[#08132f] to-[#0c2b59] p-[40px]'>
         <Logo/>
         <h1 className='font-thin'>Ghuman law associates</h1>
       </div>
       <Header scrollToSection={scrollToSection}/>
-    <HeroSec/>
+    <HeroSec />
     <HAboutSec/>
     <Service/>
     <Professionals/>
