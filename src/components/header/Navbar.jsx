@@ -9,13 +9,20 @@ const Navbar = ({ scrollToSection }) => {
           {" "}
           <li>Home</li>
         </button>
+         <button onClick={() =>scrollToSection('Service') }>
+          {" "}
+          <li>Service</li>
+        </button>
         <button onClick={() =>scrollToSection('About-Us') }>
           {" "}
           <li>About Us</li>
         </button>
-        <button onClick={() =>scrollToSection('Case-Study') }>
+       
+        <button
+          onClick={() =>scrollToSection('Our-Professionls') }
+        >
           {" "}
-          <li>Case Study</li>
+          <li>Our Professionls</li>
         </button>
         <button
           onClick={() =>scrollToSection('Contact-Us') }

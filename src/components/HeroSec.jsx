@@ -2,8 +2,8 @@ import React from 'react'
 
 const HeroSec = () => {
   return (
-    <div className='bg-gradient-to-r from-[#08132f] to-[#0c2b59] w-full h-[90dvh]'>
-     <ul className='pt-[40px] text-[#fff] flex flex-col justify-center items-center font-bold text-[25px] gap-[20px]'>
+    <div id='Home' className='bg-gradient-to-r from-[#08132f] to-[#0c2b59] w-full h-[90dvh]'>
+     <ul className='pt-[40px] text-secondary flex flex-col justify-center items-center font-bold text-[25px] gap-[20px]'>
       <li>A</li>
       <li>Legacy</li>
       <li>of</li>

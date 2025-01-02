@@ -30,22 +30,31 @@ const ResponsiveNav = ({ scrollToSection }) => {
 
         <nav className="m-[5%]">
           <ul className="flex flex-col gap-[20px]">
-            <button onClick={() => scrollToSection("Home")}>
-              {" "}
-              <li>Home</li>
-            </button>
-            <button onClick={() => scrollToSection("About-Us")}>
-              {" "}
-              <li>About Us</li>
-            </button>
-            <button onClick={() => scrollToSection("Case-Study")}>
-              {" "}
-              <li>Case Study</li>
-            </button>
-            <button onClick={() => scrollToSection("Contact-Us")}>
-              {" "}
-              <li>Contact Us</li>
-            </button>
+          <button onClick={() =>scrollToSection('Home') }>
+          {" "}
+          <li>Home</li>
+        </button>
+         <button onClick={() =>scrollToSection('Service') }>
+          {" "}
+          <li>Service</li>
+        </button>
+        <button onClick={() =>scrollToSection('About-Us') }>
+          {" "}
+          <li>About Us</li>
+        </button>
+       
+        <button
+          onClick={() =>scrollToSection('Our-Professionls') }
+        >
+          {" "}
+          <li>Our Professionls</li>
+        </button>
+        <button
+          onClick={() =>scrollToSection('Contact-Us') }
+        >
+          {" "}
+          <li>Contact Us</li>
+        </button>
           </ul>
         </nav>
       </div>
