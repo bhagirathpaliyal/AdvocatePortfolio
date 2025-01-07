@@ -2,19 +2,17 @@ import React from 'react'
 
 const HeroSec = () => {
   return (
-    <div id='Home' className='bg-gradient-to-r from-[#08132f] to-[#0c2b59] w-full h-[90dvh]'>
-     <ul className='pt-[40px] text-secondary flex flex-col justify-center items-center font-bold text-[25px] gap-[20px]'>
-      <li>A</li>
-      <li>Legacy</li>
-      <li>of</li>
-      <li>Proven Excellence</li>
-      <li>in</li>
-      <li>Litigation</li>
-      <li>for</li>
-      <li>Over Three Decades</li>
-     </ul>
-    
-
+    <div id='Home' className='bg-gradient-to-r from-[#091535] to-[#0d3065] w-full h-[90dvh]'>
+      <ul className='pt-[40px] text-secondary flex flex-col justify-center items-center font-bold text-[25px] gap-[20px]'>
+        <li className='animated-item animation-delay-100'>A</li>
+        <li className='animated-item animation-delay-200'>Legacy</li>
+        <li className='animated-item animation-delay-300'>of</li>
+        <li className='animated-item animation-delay-400'>Proven Excellence</li>
+        <li className='animated-item animation-delay-500'>in</li>
+        <li className='animated-item animation-delay-600'>Litigation</li>
+        <li className='animated-item animation-delay-700'>for</li>
+        <li className='animated-item animation-delay-800'>Over Three Decades</li>
+      </ul>
     </div>
   )
 }

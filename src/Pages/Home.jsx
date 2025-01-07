@@ -13,14 +13,14 @@ const Home = ({ scrollToSection }) => {
  
   return (
     <div >
-      <div className=' text-[#fff] flex flex-col items-center bg-gradient-to-r from-[#08132f] to-[#0c2b59] p-[40px]'>
+      <div className=' text-[#fff] flex flex-col items-center bg-gradient-to-r from-[#091535] to-[#0d3065] p-[40px]'>
         <Logo/>
         <h1 className='font-thin'>Ghuman law associates</h1>
       </div>
       <Header scrollToSection={scrollToSection}/>
     <HeroSec />
-    <HAboutSec/>
     <Service/>
+    <HAboutSec/>
     <Professionals/>
     <HAchievementSec/>
     <ContactForm/>

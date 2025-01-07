@@ -23,16 +23,13 @@ const Footer = () => {
         <div className="flex-1 min-w-[250px]">
         <div className="flex items-start gap-4 mb-4">
             <img src={phoneImg} alt="Phone" className="w-6 h-6" />
-            <p>9814004646</p>
-          </div>  
-        <div className="flex items-start gap-4 mb-4">
-            <img src={phoneImg} alt="Phone" className="w-6 h-6" />
-            <p>9855188646</p>
-          </div>  
-        <div className="flex items-start gap-4 mb-4">
-            <img src={phoneImg} alt="Phone" className="w-6 h-6" />
+           <div className='flex flex-wrap gap-[5px]'>
+            <p>9814004646</p><span>,</span>
+            <p>9855188646</p><span>,</span>
             <p>7837129934</p>
+            </div> 
           </div>  
+        
           <div className="flex items-start gap-4 mb-4">
             <img src={envelopeImg} alt="Email" className="w-6 h-6" />
             <p>info@example.in</p>
@@ -60,24 +57,30 @@ const Footer = () => {
 
         {/* Map Section */}
         <div className="flex-1 min-w-[250px]">
-          <h4 className="text-xl md:text-2xl font-bold mb-4">Our Location</h4>
-          <div className="w-full h-64 rounded-md overflow-hidden shadow-md">
-            <iframe
-              title="Map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.5192148046237!2d76.79122831549349!3d30.732462381640524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed59d707d62f%3A0x54b4e858ae03257f!2sChamber%20No.%20168%2C%20District%20and%20Session%20Court%20Complex!5e0!3m2!1sen!2sin!4v1698963487475!5m2!1sen!2sin"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-            ></iframe>
-          </div>
-        </div>
+  <h4 className="text-xl md:text-2xl font-bold mb-4">Our Location</h4>
+  <div className="w-full h-64 rounded-md overflow-hidden shadow-md">
+    <iframe
+      title="Map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.4441853518057!2d76.77563441549365!3d30.739831281639047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390feecb129c8ff1%3A0x71f7170f47d6a5b!2sHouse%20No.%201100%2C%20Sector%2015B%2C%20Chandigarh%2C%20160015!5e0!3m2!1sen!2sin!4v1698963487475!5m2!1sen!2sin"
+      
+      width="100%"
+      height="100%"
+      style={{ border: 0 }}
+      allowFullScreen=""
+      loading="lazy"
+    ></iframe>
+  </div>
+</div>
+
+
+
+
+
       </div>
 
       {/* Footer Bottom */}
       <div className="bg-dark py-4">
-        <p className="text-center text-[16px]">
+        <p className="text-center text-[12px] opacity-30">
           Developed By{' '}
           <span className="font-bold text-secondary">
             TechPaliyal
