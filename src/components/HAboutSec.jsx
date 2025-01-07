@@ -5,7 +5,7 @@ const HAboutSec = () => {
   return (
     <div
       id="About-Us"
-      className="section1 py-10 px-4 lg:py-20 lg:px-32 bg-gray-100 text-center"
+      className="section1 py-10 px-4 lg:py-20 lg:px-32 bg-[#d7d7d7] text-center"
     >
       <h4 className="font-bold max-sm:text-[16px] text-[24px]">About Us</h4>
       <div className="mt-4 text-gray-600 max-w-screen-md mx-auto" >

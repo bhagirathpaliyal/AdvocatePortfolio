@@ -19,7 +19,7 @@ function ContactForm() {
   };
 
   return (
-    <div id='Contact-Us' className="p-6 bg-white rounded-lg shadow-md flex-1">
+    <div id='Contact-Us' className="p-6 bg-gray-100 rounded-lg shadow-md flex-1">
       <h2 className="font-semibold text-center mb-6 text-secondary max-sm:text-[16px] text-[24px]">Submit Your Legal Query</h2>
       <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
         <input
