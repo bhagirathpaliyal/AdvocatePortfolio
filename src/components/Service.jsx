@@ -21,8 +21,8 @@ const Service = () => {
         <h4 className='font-bold mb-[40px] max-sm:text-[16px] text-[24px]'>AREAS OF SERVICE</h4>
        
           <div className='w-[80%] flex justify-center gap-[10%] flex-wrap'>
-            {lawCategories.map((element)=>(
-              <p className=' w-[45%] text-center bg-gradient-to-r from-[#08132f] to-[#0c2b59] text-[#fff] max-sm:text-[10px] text-[14px] mb-[20px] p-[10px] border rounded-lg '>{element}</p>
+            {lawCategories.map((element,index)=>(
+              <p className=' w-[45%] text-center bg-gradient-to-r from-[#08132f] to-[#0c2b59] text-[#fff] max-sm:text-[10px] text-[14px] mb-[20px] p-[10px] border rounded-lg ' key={index}>{element}</p>
             ))}
           </div>
 
