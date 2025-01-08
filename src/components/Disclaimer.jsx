@@ -1,9 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Disclaimer= () => {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const hasAgreed = localStorage.getItem("hasAgreedToDisclaimer");
+    if (!hasAgreed) {
+      setIsVisible(true); 
+    }
+  }, []);
 
   const handleAgree = () => {
+    localStorage.setItem("hasAgreedToDisclaimer", "true"); 
     setIsVisible(false);
   };
 
