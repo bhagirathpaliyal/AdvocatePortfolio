@@ -1,17 +1,14 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
 import xLogo from "/public/assets/xmark-solid.svg";
 const ResponsiveNav = ({ scrollToSection }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="md:hidden">
-      <button
-        className={`${isOpen ? "hidden" : ""}`}
-        onClick={() => setIsOpen((prev) => !prev)}
-      >
+    <div className="md:hidden flex justify-between w-full">
+      <button className="text-secondary font-medium">Logo</button>
+      <button className={``} onClick={() => setIsOpen((prev) => !prev)}>
         menu
       </button>
-      
+
       <div
         className={`${
           isOpen ? "" : "hidden"
@@ -28,33 +25,29 @@ const ResponsiveNav = ({ scrollToSection }) => {
           />
         </button>
 
-        <nav className="m-[5%]">
+        <nav className={`m-[5%] `} onClick={() => setIsOpen((prev) => !prev)}>
           <ul className="flex flex-col gap-[20px]">
-          <button onClick={() =>scrollToSection('Home') }>
-          {" "}
-          <li>Home</li>
-        </button>
-         <button onClick={() =>scrollToSection('Service') }>
-          {" "}
-          <li>Service</li>
-        </button>
-        <button onClick={() =>scrollToSection('About-Us') }>
-          {" "}
-          <li>About Us</li>
-        </button>
-       
-        <button
-          onClick={() =>scrollToSection('Our-Professionls') }
-        >
-          {" "}
-          <li>Our Professionls</li>
-        </button>
-        <button
-          onClick={() =>scrollToSection('Contact-Us') }
-        >
-          {" "}
-          <li>Contact Us</li>
-        </button>
+            <button onClick={() => scrollToSection("Home")}>
+              {" "}
+              <li>Home</li>
+            </button>
+            <button onClick={() => scrollToSection("Service")}>
+              {" "}
+              <li>Service</li>
+            </button>
+            <button onClick={() => scrollToSection("About-Us")}>
+              {" "}
+              <li>About Us</li>
+            </button>
+
+            <button onClick={() => scrollToSection("Our-Professionls")}>
+              {" "}
+              <li>Our Professionls</li>
+            </button>
+            <button onClick={() => scrollToSection("Contact-Us")}>
+              {" "}
+              <li>Contact Us</li>
+            </button>
           </ul>
         </nav>
       </div>

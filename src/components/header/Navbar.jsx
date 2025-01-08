@@ -3,8 +3,9 @@ import React from "react";
 
 const Navbar = ({ scrollToSection }) => {
   return (
-    <nav>
-      <ul className="flex gap-6 text-[14px] max-md:hidden">
+    <nav className="flex w-full max-md:hidden ">
+      <button className="max-md:hidden flex text-secondary font-medium justify-left">Logo</button>
+      <ul className="flex gap-6 text-[14px] max-md:hidden justify-center flex-1 ">
         <button onClick={() =>scrollToSection('Home') }>
           {" "}
           <li>Home</li>
