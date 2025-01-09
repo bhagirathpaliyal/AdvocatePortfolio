@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import xLogo from "/public/assets/xmark-solid.svg";
-const ResponsiveNav = ({ scrollToSection }) => {
+const ResponsiveNav = ({ scrollToSection ,isScrolled}) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="md:hidden flex justify-between w-full">
-      <button className="text-secondary font-medium">Logo</button>
+      <button className="text-secondary font-medium">{isScrolled && <span >Logo</span>}</button>
       <button className={``} onClick={() => setIsOpen((prev) => !prev)}>
         menu
       </button>

@@ -1,10 +1,13 @@
 import React from "react";
 
 
-const Navbar = ({ scrollToSection }) => {
+const Navbar = ({ scrollToSection,isScrolled }) => {
+
+  
   return (
     <nav className="flex w-full max-md:hidden ">
-      <button className="max-md:hidden flex text-secondary font-medium justify-left">Logo</button>
+      <button className="max-md:hidden flex text-secondary font-medium justify-left"> {isScrolled && <span >Logo</span>}
+     </button>
       <ul className="flex gap-6 text-[14px] max-md:hidden justify-center flex-1 ">
         <button onClick={() =>scrollToSection('Home') }>
           {" "}
