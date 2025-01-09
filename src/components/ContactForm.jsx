@@ -21,7 +21,7 @@ function ContactForm() {
   return (
     <div id='Contact-Us' className="p-6 bg-gray-100 rounded-lg shadow-md flex-1">
       <h2 className="font-semibold text-center mb-6 text-secondary max-sm:text-[16px] text-[24px]">Submit Your Legal Query</h2>
-      <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
+      <form onSubmit={handleSubmit} className="flex flex-col space-y-4 max-sm:text-[12px] text-[14px]">
         <input
           type="text"
           name="name"
@@ -29,7 +29,7 @@ function ContactForm() {
           value={formData.name}
           onChange={handleChange}
           required
-          className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-secondary"
+          className="p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-secondary"
         />
         <input
           type="email"
@@ -38,7 +38,7 @@ function ContactForm() {
           value={formData.email}
           onChange={handleChange}
           required
-          className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-secondary"
+          className="p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-secondary"
         />
         <input
           type="tel"
@@ -47,7 +47,7 @@ function ContactForm() {
           value={formData.phone}
           onChange={handleChange}
           required
-          className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-secondary"
+          className="p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-secondary"
         />
         <input
           type="text"
@@ -56,7 +56,7 @@ function ContactForm() {
           value={formData.country}
           onChange={handleChange}
           required
-          className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-secondary"
+          className="p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-secondary"
         />
         <textarea
           name="message"
@@ -64,7 +64,7 @@ function ContactForm() {
           value={formData.message}
           onChange={handleChange}
           required
-          className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-secondary resize-none h-32"
+          className="p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-secondary resize-none h-32"
         />
         <button
           type="submit"

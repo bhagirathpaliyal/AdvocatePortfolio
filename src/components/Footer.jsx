@@ -11,16 +11,16 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-10 flex flex-wrap gap-8 md:gap-12 text-[16px]">
         {/* Logo and Description */}
         <div className="flex-1 min-w-[250px]">
-          <h4 className="text-2xl md:text-3xl font-bold mb-4">
+          <h4 className="max-sm:text-[20px] text-[24px] md:text-3xl font-bold mb-4">
             Logo <span className="text-secondary">Here</span>
           </h4>
-          <p>
+          <p className='max-sm:text-[14px] text-[16px]'>
             NRI legal is the most trusted service provider for property and legal matters for overseas Indians. We are dedicated to solving property and legal issues for NRIs with professionalism and care.
           </p>
         </div>
 
         {/* Contact Information */}
-        <div className="flex-1 min-w-[250px]">
+        <div className="flex-1 min-w-[250px] max-sm:text-[14px] text-[16px]">
         <div className="flex items-start gap-4 mb-4">
             <img src={phoneImg} alt="Phone" className="w-6 h-6" />
            <div className='flex flex-wrap gap-[5px]'>
@@ -57,7 +57,7 @@ const Footer = () => {
 
         {/* Map Section */}
         <div className="flex-1 min-w-[250px]">
-  <h4 className="text-xl md:text-2xl font-bold mb-4">Our Location</h4>
+  <h4 className="max-sm:text-[18px] text-[24px] font-bold mb-4">Our Location</h4>
   <div className="w-full h-64 rounded-md overflow-hidden shadow-md">
     <iframe
       title="Map"

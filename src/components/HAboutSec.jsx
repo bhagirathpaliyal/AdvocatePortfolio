@@ -7,8 +7,8 @@ const HAboutSec = () => {
       id="About-Us"
       className="section1 py-10 px-4 lg:py-20 lg:px-32 bg-[#d7d7d7] text-center"
     >
-      <h4 className="font-bold max-sm:text-[16px] text-[24px]">About Us</h4>
-      <div className="mt-4 text-gray-600 max-w-screen-md mx-auto" >
+      <h4 className="font-bold max-sm:text-[18px] text-[24px]">About Us</h4>
+      <div className="mt-4 text-gray-600 max-w-screen-md mx-auto max-sm:text-[14px] text-[18px]" >
         <p className="mb-[10px]">
           {" "}
           For more than 33 years,{" "}

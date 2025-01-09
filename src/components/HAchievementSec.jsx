@@ -31,7 +31,7 @@ const HAchievementSec = () => {
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-screen-xl mx-auto">
       {data.map((item, index) => (
         <div key={index} className="flex flex-col items-center text-center">
-          <img src={item.img} alt={item.title} className="h-20 w-20 mb-4" />
+          <img src={item.img} alt={item.title} className="h-16 w-16 mb-4" />
           <h4 className="text-secondary text-xl font-bold">{item.title}</h4>
           <p className="text-white text-sm mt-2">{item.description}</p>
         </div>
