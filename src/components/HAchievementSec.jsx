@@ -1,31 +1,28 @@
 import React from 'react'
-import awardImg from '/public/assets/award-solid.svg'
-import shieldImg from '/public/assets/shield-alt-solid.svg'
-import trophyImg from '/public/assets/trophy-solid.svg'
-import earthAsiaImg from '/public/assets/earth-asia-solid.svg'
+
+const data=[
+  {
+    img: 'assets/award-solid.svg',
+    title: "Proven",
+    description: "Proven has helped to win millions for our clients",
+  },
+  {
+    img: 'assets/shield-alt-solid.svg',
+    title: "Trusted",
+    description: "We take our role as trusted legal advisors seriously",
+  },
+  {
+    img: 'assets/trophy-solid.svg',
+    title: "Award Winning",
+    description: "We are honored to have received multiple awards",
+  },
+  {
+    img: 'assets/earth-asia-solid.svg',
+    title: "Multilingual",
+    description: "Meet all your language & localization needs",
+  },
+]
 const HAchievementSec = () => {
-  const data=[
-    {
-      img: awardImg,
-      title: "Proven",
-      description: "Proven has helped to win millions for our clients",
-    },
-    {
-      img: shieldImg,
-      title: "Trusted",
-      description: "We take our role as trusted legal advisors seriously",
-    },
-    {
-      img: trophyImg,
-      title: "Award Winning",
-      description: "We are honored to have received multiple awards",
-    },
-    {
-      img: earthAsiaImg,
-      title: "Multilingual",
-      description: "Meet all your language & localization needs",
-    },
-  ]
   return (
     <div className="bg-primary py-10">
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-screen-xl mx-auto">
