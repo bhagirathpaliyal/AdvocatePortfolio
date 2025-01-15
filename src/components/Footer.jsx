@@ -1,8 +1,5 @@
 import React from 'react';
-import envelopeImg from '/public/assets/envelope-regular.svg';
-import locationImg from '/public/assets/location-dot-solid.svg';
-import phoneImg from '/public/assets/phone-solid.svg';
-import clockImg from '/public/assets/clock-solid.svg';
+
 
 const Footer = () => {
   return (
@@ -22,7 +19,7 @@ const Footer = () => {
         {/* Contact Information */}
         <div className="flex-1 min-w-[250px] max-sm:text-[14px] text-[16px]">
         <div className="flex items-start gap-4 mb-4">
-            <img src={phoneImg} alt="Phone" className="w-6 h-6" />
+            <img src='assets/phone-solid.svg' alt="Phone" className="w-6 h-6" />
            <div className='flex flex-wrap gap-[5px]'>
             <p>9814004646</p><span>,</span>
             <p>9855188646</p><span>,</span>
@@ -31,11 +28,11 @@ const Footer = () => {
           </div>  
         
           <div className="flex items-start gap-4 mb-4">
-            <img src={envelopeImg} alt="Email" className="w-6 h-6" />
+            <img src='assets/envelope-regular.svg' alt="Email" className="w-6 h-6" />
             <p>info@example.in</p>
           </div>
           <div className="flex items-start gap-4 mb-4">
-            <img src={locationImg} alt="Location" className="w-6 h-6" />
+            <img src='assets/location-dot-solid.svg' alt="Location" className="w-6 h-6" />
             <p>
             House number: 1100, Sector- 15-B, Chandigarh, 160015
 
@@ -44,7 +41,7 @@ const Footer = () => {
         
          
           <div className="flex items-start gap-4">
-            <img src={clockImg} alt="Clock" className="w-6 h-6" />
+            <img src={'assets/clock-solid.svg'} alt="Clock" className="w-6 h-6" />
             <p>
               Monday - Friday: 10am - 6pm
               <br />
